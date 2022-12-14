@@ -1,0 +1,69 @@
+
+$accent: #0D4C92;
+// $accent: rgb(86, 16, 16);
+$color: #00331a;
+$bg-2: rgba(0,51,26,0.726);
+$bg-3: rgba(0,51,26,.032);
+$box-shadow-1:  0 8px 15px rgb(0 0 0 / 10%);
+$text-shadow-1: 2px 4px 3px rgb(0 0 0 / 10%);
+$dark-mode-bg: #171717;
+$darkmode-text-color: #f5f5f5;
+$darkmode-icon-bg: #292929;
+$darkmode-tool-bg: #292929;
+$darkmode-div-bg:  #1f1f1f;
+
+html{
+        
+    background-color: $dark-mode-bg;
+}
+#dark{
+    display: none;
+}
+#light{
+    display: flex;
+    
+}
+header .logo-menu .nav-dark-mode #light{
+    color: $darkmode-text-color;
+}
+
+header .logo-menu ._h3 h3, header .logo-menu .nav-dark-mode ul li a, header .logo-menu .nav-dark-mode #dark,.wrap .home .my-name h4, .wrap .home .my-name h1,
+.wrap .projects .heading .h2, .wrap .contact .heading .h2, .wrap .skills .heading .h2, .wrap .other-projects .heading .h2 , .wrap .projects .my-projects .sample-projects .project-details h1, .wrap .projects .my-projects .sample-projects .project-details .tool span, .wrap .other-projects .heading-2 h3,
+.wrap .skills .my-skills .my-skills-border .skills-list h4 , .wrap .contact .my-contact .contact-me .contact-div .form-border form h2 , .wrap .contact .my-contact .contact-me .contact-div .form-border form .textbox label,
+.wrap .contact .my-contact .contact-me .contact-div .form-border form .textbox input, .wrap .contact .my-contact .contact-me .contact-div .form-border form .textbox textarea, .wrap footer h3,
+.wrap .other-projects .my-other-projects .other-project-border .other-sample-projects .project-details h1, .wrap .other-projects .my-other-projects .other-project-border .other-sample-projects .project-details p ,
+.wrap .other-projects .my-other-projects .other-project-border .other-sample-projects .project-details .tool span 
+
+{
+color: $darkmode-text-color;
+}
+.wrap .projects .my-projects .sample-projects .project-details p
+{
+opacity: 70%;
+color: $darkmode-text-color;
+
+}
+.wrap .skills .my-skills .my-skills-border .skills-list #invert-in-darkmode{
+filter: invert(1);
+}
+.wrap .home .btn .link-icon .link-a, .wrap .projects .my-projects .sample-projects .project-details .project-link .git .prjt-git-link, .wrap footer .footer-icon .link-a,
+.wrap .projects .my-projects .sample-projects .project-details .tool span, .wrap .contact .my-contact .contact-me .contact-div .form-border form .textbox input, .wrap .contact .my-contact .contact-me .contact-div .form-border form .textbox textarea,
+.wrap .other-projects .my-other-projects .other-project-border .other-sample-projects .project-details .project-link .git .prjt-git-link, .wrap .other-projects .my-other-projects .other-project-border .other-sample-projects .project-details .tool span
+{
+background: $darkmode-icon-bg;
+} 
+.wrap .home .btn .link-icon .link-a span, .wrap .projects .my-projects .sample-projects .project-details .project-link .git .prjt-git-link span, .wrap footer .footer-icon .link-a span,
+.wrap .other-projects .my-other-projects .other-project-border .other-sample-projects .project-details .project-link .git .prjt-git-link span 
+{
+border: 1px solid $darkmode-icon-bg;
+}
+.wrap .projects .my-projects .sample-projects,.wrap .other-projects .my-other-projects .other-project-border .other-sample-projects, .wrap .skills .my-skills .my-skills-border .skills-list,
+.wrap .contact .my-contact .contact-me .contact-div .form-border form
+{
+background: $darkmode-div-bg;
+}
+.wrap .projects .my-projects .project-border, .wrap .other-projects .my-other-projects .other-project-border ,.wrap .skills .my-skills .my-skills-border,
+.wrap .contact .my-contact .contact-me .contact-div .form-border
+{
+border: 2px solid $darkmode-div-bg;
+}

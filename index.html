@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@jomarbodino</title>
     <link rel="icon" href="assets/image/PngItem_6557548.png" sizes="16x16" type="image/png">
-    
+    <!-- css file -->
     <link rel="stylesheet" href="assets/css/index.css">
+    <!-- fontawesome -->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
     <script defer src="assets/fontawesome/css/all.css"></script>
+    <!-- AOS -->
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <script src="node_modules/aos/dist/aos.js"></script>
 
+    <!-- if AOS from file is not working redirect from AOS CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+    <!-- <link rel="stylesheet" href="(unkinown)"> -->
 </head>
 <body>
     <header class="navbar" id="navbar">
         <div class="logo-menu">
-            <a href="" class="_h3" data-aos="fade-down" data-aos-duration="300">
-                <h3>@jomarbodino</h3>
+            <a href="" class="_h3" data-aos="fade-down" data-aos-delay="300">
+                <h3>@jomarb</h3>
             </a>
             <div class="nav-dark-mode">
                 <ul>
-                    <li data-aos="fade-down" data-aos-duration="400"><a href="#home" >home</a></li>
-                    <li data-aos="fade-down" data-aos-duration="500"><a href="#projects">projects</a></li>
-                    <li data-aos="fade-down" data-aos-duration="600"><a href="#skills">skills</a></li>
+                    <li data-aos="fade-down" data-aos-delay="400"><a href="#home" >home</a></li>
+                    <li data-aos="fade-down" data-aos-delay="500"><a href="#projects">projects</a></li>
+                    <li data-aos="fade-down" data-aos-delay="600"><a href="#skills">skills</a></li>
                     <!-- <li data-aos="fade-down" data-aos-duration="700"><a href="">about</a></li> -->
-                    <li data-aos="fade-down" data-aos-duration="800"><a href="#contact">contact</a></li>
+                    <li data-aos="fade-down" data-aos-delay="700"><a href="#contact">contact</a></li>
                 </ul>
-                <div data-aos="fade-down" data-aos-duration="900">
+                <div data-aos="fade-down" data-aos-delay="800">
                     <i class="fa-regular fa-moon" id="dark" ></i>
-                    <i class="fa-regular fa-sun " id="light" ></i>
+                    <i class="fa-regular fa-sun " id="light"></i>
                 </div>
             </div>
         </div>
@@ -41,17 +44,17 @@
     <div class="wrap">
         <section class="home" id="home">
             <div class="_image" id="_image">
-                <div data-aos="fade-right" data-aos-duration="900">
+                <div data-aos="fade-right" data-aos-delay="900">
                     <img src="assets/image/PngItem_6557548.png" alt="">
                 </div>
             </div>
             <div class="my-name">
-                <h4 data-aos="fade-down" data-aos-duration="800">Hello, they call me Jomar.</h4>
-                <div data-aos="fade-down" data-aos-duration="900">
+                <h4 data-aos="fade-up" data-aos-delay="1000">Hello, they call me Jomar.</h4>
+                <div data-aos="fade-up" data-aos-delay="1100">
 
                     <h1>I <span>design</span> and <span>develop</span> things for the web.</h1>
                 </div>
-                <div class="btn" data-aos="fade-up" data-aos-duration="900">
+                <div class="btn" data-aos="fade-up" data-aos-delay="1200">
                     <a href="#projects" class="_btn-projt">
                         <div class="btn-projects">
                             <button>
@@ -60,7 +63,7 @@
                         </div>
                     </a>
                     <div class="link-icon">
-                       <a href="#" title="github" class="link-a"><i class="fa-brands fa-github"></i><span></span></a>
+                       <a href="https://github.com/jakjomar" title="github" class="link-a" target="_blank"><i class="fa-brands fa-github"></i><span></span></a>
                        <!-- <a href="#" title="gitlab" class="link-a"><i class="fa-brands fa-gitlab"></i><span></span></a>
                        <a href="#" title="linkedin" class="link-a"><i class="fa-brands fa-linkedin-in"></i><span></span></a> -->
                        <a href="#" title="Facebook" class="link-a"><i class="fa-brands fa-facebook-f"></i><span></span></a>
@@ -70,72 +73,79 @@
         </section>
         <section class="projects" id="projects">
             <div class="heading">
-                <h2 class="h2">featured projects</h2>
+                <h2 class="h2" data-aos="fade-up" data-aos-delay="100">featured projects</h2>
             </div>
             <div class="my-projects">
-                <div class="project-border">
-                    <div class="sample-projects">
-                        <div class="project-thumbnail">
-                            <img src="assets/image/YT.png" alt="">
-                        </div>
-                        <div class="project-details">
-                            <h1>Youtube Clone</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <!-- <span>javascript</span> -->
-                                <span>bootstrap</span>
-                                <span>php</span>
-                                <span>mysql</span>
+                <div class="project-AOS-animate"  data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-border">
+                        <div class="sample-projects">
+                            <div class="project-thumbnail">
+                                <img src="assets/image/YT.png" alt="">
                             </div>
-                            <div class="project-link">
-                                <a href="#projects" class="project-btn">
-                                    <button class="take-a-look">
-                                        take a look
-                                    </button>
-                                </a>
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
+                            <div class="project-details">
+                                <h1>Youtube Clone</h1>
+                                <p>This project is inspired by the well-known and one of the most popular video-sharing sites which are YouTube(YT).</p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <!-- <span>javascript</span> -->
+                                    <span>bootstrap</span>
+                                    <span>php</span>
+                                    <span>mysql</span>
+                                </div>
+                                <div class="project-link">
+                                    <a href="#projects" class="project-btn">
+                                        <button class="take-a-look">
+                                            take a look
+                                        </button>
                                     </a>
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-border">
-                    <div class="sample-projects">
-                        <div class="project-thumbnail">
-                            <img src="assets/image/microfinance.png" alt="">
-                        </div>
-                        <div class="project-details">
-                            <h1>Microfinance System</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <span>javascript</span>
-                                <!-- <span>bootstrap</span> -->
-                                <span>php</span>
-                                <span>mysql</span>
+                <div class="project-AOS-animate"  data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-border">
+                        <div class="sample-projects">
+                            <div class="project-thumbnail">
+                                <img src="assets/image/microfinance.png" alt="">
                             </div>
-                            <div class="project-link">
-                                <a href="#projects" class="project-btn">
-                                    <button class="take-a-look">
-                                        take a look
-                                    </button>
-                                </a>
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
+                            <div class="project-details">
+                                <h1>Microfinance System</h1>
+                                <p>Microfinance System is an online saving system that aims to provide an efficient,
+                                     effective and easy way to manage and save your money online.
+                                      It has interfaces like Personal Information that contains data from customer 
+                                      like full name, gender, birth date, age, civil status, address, zip code, occupation,
+                                       household income, and contact information like mobile number and email address,
+                                        Loan where you can apply for loan out view your current loan details and payment details, 
+                                        Savings that have Deposit and Withdraw function and About that describes the system. 
+                                        It is available to use in devices such as computer, laptop and smartphones. </p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>javascript</span>
+                                    <!-- <span>bootstrap</span> -->
+                                    <span>php</span>
+                                    <span>mysql</span>
+                                </div>
+                                <div class="project-link">
+                                    <a href="#projects" class="project-btn">
+                                        <button class="take-a-look">
+                                            take a look
+                                        </button>
                                     </a>
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,257 +155,291 @@
         </section>
         <section class="other-projects">
             <div class="heading">
-                <h2 class="h2">projects</h2>
+                <h2 class="h2" data-aos="fade-up" data-aos-delay="100">projects</h2>
             </div>
             <div class="my-other-projects">
-                <div class="other-project-border">
-                    <div class="other-sample-projects">
-                        <div class="project-details">
-                            <div class="project-link">
-                                <!-- <a href="#projects" class="project-btn">
-                                    <button class="take-a-look">
-                                        take a look
-                                    </button>
-                                </a> -->
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
-                                    </a>
+                <div class="other-project-aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="other-project-border">
+                        <div class="other-sample-projects">
+                            <div class="project-details">
+                                <div class="project-link">
+                                    <!-- <a href="#projects" class="project-btn">
+                                        <button class="take-a-look">
+                                            take a look
+                                        </button>
+                                    </a> -->
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
+                                <h1>To-Do-List (web app)</h1>
+                                <p>To do lists offer a way to increase productivity, stoping you from forgetting things, 
+                                    helps priorities task, manage task effectively, use time wisely and improve time management.</p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <!-- <span>javascript</span> -->
+                                    <span>bootstrap</span>
+                                    <span>php</span>
+                                    <span>mysql</span>
+                                </div>
+                                
                             </div>
-                            <h1>To-Do-List (web app)</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <!-- <span>javascript</span> -->
-                                <span>bootstrap</span>
-                                <span>php</span>
-                                <span>mysql</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-project-aos-animate" data-aos="fade-up" data-aos-delay="500">
+                    <div class="other-project-border">
+                        <div class="other-sample-projects">
+                            <div class="project-details">
+                                <div class="project-link">
+                                    <!-- <a href="#projects" class="project-btn">
+                                        <button class="take-a-look">
+                                            take a look
+                                        </button>
+                                    </a> -->
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h1>Landing page</h1>
+                                <p>A landing page is a standalone web page that a person "lands" on after clicking through from an email,
+                                     ad, or other digital location. Every content strategy should include the use of landing pages to convert
+                                      more traffic and increase conversions.</p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <!-- <span>javascript</span> -->
+                                    <span>tailwindcss</span>
+                                </div>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-                <div class="other-project-border">
-                    <div class="other-sample-projects">
-                        <div class="project-details">
-                            <div class="project-link">
-                                <!-- <a href="#projects" class="project-btn">
-                                    <button class="take-a-look">
-                                        take a look
-                                    </button>
-                                </a> -->
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
-                                    </a>
+                <div class="other-project-aos-animate" data-aos="fade-up" data-aos-delay="700">
+                    <div class="other-project-border">
+                        <div class="other-sample-projects">
+                            <div class="project-details">
+                                <div class="project-link">
+                                    <!-- <a href="#projects" class="project-btn">
+                                        <button class="take-a-look">
+                                            take a look
+                                        </button>
+                                    </a> -->
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <h1>Landing page</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <!-- <span>javascript</span> -->
-                                <span>tailwindcss</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="other-project-border">
-                    <div class="other-sample-projects">
-                        <div class="project-details">
-                            <div class="project-link">
-                                <!-- <a href="#projects" class="project-btn">
-                                    <button class="take-a-look">
-                                        take a look
-                                    </button>
-                                </a> -->
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
-                                    </a>
+                                <h1>Movie Streaming (web app)</h1>
+                                <p> Movie Streaming an web application show where the users can see the movie free of cost. Nowadays all people want to watch the movie. 
+                                    All the CDs are not in use. This system will make it easier for users to watch and download movies.</p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>javascript</span>
+                                    <span>bootstrap</span>
+                                    <span>php</span>
+                                    <span>mysql</span>
                                 </div>
-                            </div>
-                            <h1>Movies (web app)</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <!-- <span>javascript</span> -->
-                                <span>bootstrap</span>
-                                <span>php</span>
-                                <span>mysql</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="other-project-border">
-                    <div class="other-sample-projects">
-                        <div class="project-details">
-                            <div class="project-link">
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
-                                    </a>
+                <div class="other-project-aos-animate" data-aos="fade-up" data-aos-delay="900">
+                    <div class="other-project-border">
+                        <div class="other-sample-projects">
+                            <div class="project-details">
+                                <div class="project-link">
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <h1>Notes (web app)</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <span>bootstrap</span>
-                                <span>php</span>
-                                <span>mysql</span>
+                                <h1>Notes (web app)</h1>
+                                <p>Notes applications (also known as note-taking apps) allow user to store all notes and valuable information digitally</p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>bootstrap</span>
+                                    <span>php</span>
+                                    <span>mysql</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="other-project-border">
-                    <div class="other-sample-projects">
-                        <div class="project-details">
-                            <div class="project-link">
-                                <div class="git">
-                                    <a href="#projects" title="github" class="prjt-git-link">
-                                        <i class="fa-brands fa-github"></i>
-                                        <span></span>
-                                    </a>
+                <!-- <div class="other-project-aos-animate" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="other-project-border">
+                        <div class="other-sample-projects">
+                            <div class="project-details">
+                                <div class="project-link">
+                                    <div class="git">
+                                        <a href="#projects" title="github" class="prjt-git-link">
+                                            <i class="fa-brands fa-github"></i>
+                                            <span></span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <h1>Login Form</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
-                                voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
-                            <div class="tool">
-                                <span>html</span>
-                                <span>css</span>
-                                <span>php</span>
-                                <span>mysql</span>
+                                <h1>Login Form</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime dolorum doloribus, animi culpa in incidunt nostrum alias quasi repellendus explicabo quam minima corrupti, 
+                                    voluptatibus ipsum aperiam mollitia! Aut, nobis accusantium?</p>
+                                <div class="tool">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>php</span>
+                                    <span>mysql</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="heading-2">
-                    <h3 class="h3">More Projects Coming Soon...</h3>
+                    <h3 class="h3" data-aos="fade-up" data-aos-delay="1300">More Projects Coming Soon...</h3>
                 </div>
             </div>
         </section>
         <section class="skills" id="skills">
             <div class="heading">
-                <h2 class="h2">skills</h2>
+                <h2 class="h2" data-aos="fade-up" data-aos-duration="100">skills</h2>
             </div>
             <div class="my-skills">
-                <div class="my-skills-border"  data-aos="zoom-in">
-                    <div class="skills-list">
-                        <img src="assets/image/html.png" alt="">
-                        <h4>html</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="300">
+                    <div class="my-skills-border">
+                        <div class="skills-list" >
+                            <img src="assets/image/html.png" alt="">
+                            <h4>html</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/css.png" alt="">
-                        <h4>css</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="400">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/css.png" alt="">
+                            <h4>css</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/sass.png" alt="">
-                        <h4>sass</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="500">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/sass.png" alt="">
+                            <h4>sass</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/js.png" alt="">
-                        <h4>javascript</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="500">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/js.png" alt="">
+                            <h4>javascript</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/bootstrap.png" alt="">
-                        <h4>bootstrap</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="600">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/bootstrap.png" alt="">
+                            <h4>bootstrap</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/tailwindcss.png" alt="">
-                        <h4>tailwindcss</h4>
+                <div class="skill-aos-animate"data-aos="flip-right" data-aos-delay="700">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/tailwindcss.png" alt="">
+                            <h4>tailwindcss</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/php.png" alt="">
-                        <h4>php</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="800">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/php.png" alt="">
+                            <h4>php</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/mysql.png" alt="">
-                        <h4>mysql</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="900">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/mysql.png" alt="">
+                            <h4>mysql</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border"  data-aos="zoom-in">
-                    <div class="skills-list">
-                        <img src="assets/image/microsoft-word-icon.png" alt="">
-                        <h4>MS Word</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="1000">
+                    <div class="my-skills-border" >
+                        <div class="skills-list">
+                            <img src="assets/image/microsoft-word-icon.png" alt="">
+                            <h4>MS Word</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/microsoft-powerpoint-icon.png" alt="">
-                        <h4>MS Power Point</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="1200">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/microsoft-powerpoint-icon.png" alt="">
+                            <h4>MS Power Point</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/microsoft-excel-icon.png" alt="">
-                        <h4>MS Excel</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="1300">
+                    <div class="my-skills-border" >
+                        <div class="skills-list">
+                            <img src="assets/image/microsoft-excel-icon.png" alt="">
+                            <h4>MS Excel</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/maintenance-icon.png" alt="" id="invert-in-darkmode">
-                        <h4>troubleshoot Software</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="1400">
+                    <div class="my-skills-border" >
+                        <div class="skills-list">
+                            <img src="assets/image/maintenance-icon.png" alt="" id="invert-in-darkmode">
+                            <h4>Troubleshoot Software</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/setting-computer-desktop-icon.png" alt="" id="invert-in-darkmode">
-                        <h4>Reformat windows OS</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="1500">
+                    <div class="my-skills-border">
+                        <div class="skills-list">
+                            <img src="assets/image/setting-computer-desktop-icon.png" alt="" id="invert-in-darkmode">
+                            <h4>Reformat windows OS</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="my-skills-border" data-aos="flip-right">
-                    <div class="skills-list">
-                        <img src="assets/image/install-setup-product-icon.png" alt="" id="invert-in-darkmode">
-                        <h4>Software Installation</h4>
+                <div class="skill-aos-animate" data-aos="flip-right" data-aos-delay="1600">
+                    <div class="my-skills-border" >
+                        <div class="skills-list">
+                            <img src="assets/image/install-setup-product-icon.png" alt="" id="invert-in-darkmode">
+                            <h4>Software Installation</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="contact" id="contact">
             <div class="heading">
-                <h2 class="h2">contact</h2>
+                <h2 class="h2" data-aos="fade-up" data-aos-delay="100">contact</h2>
             </div>
             <div class="my-contact">
                 <div class="contact-me">
-                    <div class="_image_1">
+                    <div class="_image_1" data-aos="fade-up" data-aos-delay="300">
                         <img src="assets/image/PngItem_6557548.png" alt="">
                     </div>
-                    <div class="contact-div">
+                    <div class="contact-div" data-aos="fade-up" data-aos-delay="500">
                         <div class="form-border">
                             <form action="" autocomplete="off">
                                 <h2>Let's Work Together</h1>
@@ -418,18 +462,16 @@
         </section>
         <footer>
             <div class="footer-icon">
-                <a href="#" title="github" class="link-a"><i class="fa-brands fa-github"></i><span></span></a>
-                <a href="#" title="gitlab" class="link-a"><i class="fa-brands fa-gitlab"></i><span></span></a>
-                <a href="#" title="linkedin" class="link-a"><i class="fa-brands fa-linkedin-in"></i><span></span></a>
+                <a href="https://github.com/jakjomar" title="github" class="link-a" target="_blank"><i class="fa-brands fa-github"></i><span></span></a>
+                <!-- <a href="#" title="gitlab" class="link-a"><i class="fa-brands fa-gitlab"></i><span></span></a>
+                <a href="#" title="linkedin" class="link-a"><i class="fa-brands fa-linkedin-in"></i><span></span></a> -->
                 <a href="#" title="Facebook" class="link-a"><i class="fa-brands fa-facebook-f"></i><span></span></a>
 
             </div>
             <h3>Created by Jomar bodino</h3>
         </footer>
     </div>
-    <script>
-        AOS.init();
-      </script>
+    
       <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;
@@ -443,6 +485,42 @@
         }
         prevScrollpos = currentScrollPos;
         }
+      </script>
+      <!-- <script>
+
+        //If darkMode doesn’t exist in the LocalStorage, create it. False by default
+        if (localStorage.getItem('darkMode')===null){
+            localStorage.setItem('darkMode', "false");
+        }
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        document.getElementsByTagName('HEAD')[0].appendChild(link);
+
+        checkStatus()
+
+        function checkStatus(){
+            if (localStorage.getItem('darkMode')==="true"){
+                link.href="assets/css/darkmode.css";
+            }else{
+                check.checked = false;
+                
+            }
+        }
+        var light1 = document.getElementById("light");
+        var dark1 = document.getElementById("dark");
+
+        dark1.onclick = function(){
+            localStorage.setItem('darkMode', "true");
+            link.href="assets/css/darkmode.css";
+        }
+        light1.onclick = function(){
+            localStorage.setItem('darkMode', "false");
+        }
+       
+
+      </script> -->
+      <script>
+        AOS.init();
       </script>
 </body>
 </html>

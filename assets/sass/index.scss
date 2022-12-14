@@ -1,8 +1,8 @@
 // @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap');
 @import url(https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap);
 // $accent: #0c6;
-// $accent: #0D4C92;
-$accent: rgb(25, 160, 144);
+$accent: #0D4C92;
+// $accent: rgb(86, 16, 16);
 $color: #00331a;
 $bg-2: rgba(0,51,26,0.726);
 $bg-3: rgba(0,51,26,.032);
@@ -19,12 +19,14 @@ $darkmode-div-bg:  #1f1f1f;
     // font-family: century gothic;
     font-family: 'Kanit', sans-serif;
     // $color: $color;
+    
 }
 html{
     width: 100%;
     background-color: #f0fffd;
     // background-color: $dark-mode-bg;
     scroll-behavior: smooth;
+    
 }
 body{
     width: 100%;
@@ -91,24 +93,39 @@ header{
                 cursor: pointer;
                 transition: 0.3s;
                 &:hover{
-                    transform: rotate(-25deg);
-                    color: $accent;
+                    // transform: rotate(-25deg);
+                    // color: $accent;
                 }
             }
             #light{
                 font-size: 24px;
                 color: $color;
                 cursor: pointer;
-                display: none;
+                // display: none;
                 transition: 0.3s;
                 &:hover{
-                    transform: rotate(-25deg);
+                    // transform: rotate(-25deg);
+                    // color: $accent;
                 }
 
             }
         }
     }
 }
+.project-AOS-animate{
+    // border: 1px solid red;
+    width: 88%;
+   margin: 0;
+    
+}
+.other-project-aos-animate{
+    // border: 1px solid red;
+    width: 30%;
+    // min-width: 200px;
+    height: auto;
+
+}
+
 .wrap{
     width: 100%;
     max-width: 1400px;
@@ -294,17 +311,16 @@ header{
         .my-projects{
             width: 100%;
             height: auto;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin: 30px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             // border: 1px solid black;
-            
+           
             .project-border{
                 border: 2px solid #daede8;
                 border-radius: 20px;
-                width: 88%;
+                width: 100%;
                 height: auto;
                 margin-bottom: 30px;
                 // min-height: 380px;
@@ -367,7 +383,7 @@ header{
                         color: $color;
                         font-family: kanit;
                         font-weight: normal;
-                        // letter-spacing: 0.5px;
+                        letter-spacing: 0.5px;
                         word-spacing: 3px;
                     }
                     .tool{
@@ -485,10 +501,11 @@ header{
             .other-project-border{
                 
                 @extend .project-border;
-                width: 30%;
+                width: 99%;
                 min-width: 200px;
                 min-height: 360px;
                 margin-bottom: 0;
+                // border: 1px solid black;
                 .other-sample-projects{
                     min-width: 250px;
                     min-height: 360px;
@@ -543,7 +560,7 @@ header{
             flex-direction: row;
             justify-content: center;
             gap: 20px;
-            width: 700px;
+            width: 900px;
             // border: 1px solid black;  
             flex-wrap: wrap;
             .my-skills-border{
@@ -609,7 +626,7 @@ header{
                     width: 250px;
                     height: 260px;
                     transition: 0.2s;
-                    margin-right: 20px;
+                    margin-right: 30px;
                     &:hover{
                         transform: rotate(-20deg);
                         
@@ -617,7 +634,7 @@ header{
                 }
             }
             .contact-div{
-                width: 45%;
+                width: 40%;
                 // min-width: 500px;
                 height: auto;
                 // min-height: 500px;
@@ -645,7 +662,7 @@ header{
                             color: $color;
                             text-shadow: $text-shadow-1;
                             // letter-spacing: 2px;
-                            
+                            padding: 0 20px;
                             align-self: center;
                             // border: 1px solid black;
                         }
@@ -777,7 +794,8 @@ header{
         h3{
             font-size: 18px;
             font-family: kanit;
-            
+            letter-spacing: 1px;
+            word-spacing: 3px;
             margin-right: 80px;
             font-weight: 400;
             color: $color;
@@ -797,6 +815,9 @@ header{
         margin-right: 10%;
         }
     }
+}
+.other-project-aos-animate{
+    width: 45%;
 }
 .wrap{
     .home{
@@ -839,7 +860,7 @@ header{
             }
         }
         .my-projects{
-            width: 95%;
+            width: 100%;
             
 
         }
@@ -849,7 +870,7 @@ header{
             
         .my-other-projects{
             .other-project-border{
-                width: 45%;
+                // width: 45%;
                 .other-sample-projects{
                     .project-details{
                         width:88%;
@@ -863,7 +884,7 @@ header{
     .skills{
         .my-skills{
             width: 95%;
-            // border: 1px solid black;
+            
         }
     }
 }
@@ -891,11 +912,11 @@ header{
                 .h2{
                     
                     margin-left: 0%;
-                    font-size: 30px; 
+                    font-size: 28px; 
                 }
             }
             .my-projects{
-                width: 95%;
+                width: 88%;
                 // border: 1px solid black;
                 #sample-projects{
                     // flex-direction: column-reverse;
@@ -913,6 +934,17 @@ header{
                         }
                         .project-details{
                             width: 90%;
+                            h1{
+                                font-size: 24px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                            .tool{
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
                             // border: solid black;
                         }
                     }
@@ -933,12 +965,27 @@ header{
                
             }
         }
+        .skills{   
+            .my-skills{
+                .my-skills-border{
+                    // width: 120px;
+                    // height: 140px;
+                    margin-bottom: 0;
+                    .skills-list{
+                        h4{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media(max-width: 660px){
     html,body{
         width: 100%;
     }
+    
     header{
         
         .logo-menu{
@@ -950,6 +997,10 @@ header{
                 }
             }
         }
+    }
+    .other-project-aos-animate{
+        width: 88%;
+        min-width: 200px;
     }
     .wrap{
         .home{
@@ -980,7 +1031,7 @@ header{
             .my-other-projects{
                 
                 .other-project-border{
-                    width: 88%;
+                    width: 100%;
                     min-height: 200px;
                     .other-sample-projects{
                     min-height: 200px;
@@ -1015,10 +1066,16 @@ header{
                     }
                     .contact-div{
                         width: 100%;
+                        margin-bottom: 50px;
                         .form-border{
                             form{
                                 h2{
                                     font-size: 24px;
+                                }
+                                .textbox{
+                                    input, textarea{
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
@@ -1037,6 +1094,7 @@ header{
             }
             h3{
                 margin-right: 0;
+                
             }
         }
         
@@ -1118,13 +1176,29 @@ header{
         background-color: #f0fffd;
         // background-color: $dark-mode-bg;
     }
-    
+    #light{
+        display: none;
+    }
+    #dark{
+        display: flex;
+    }
 }
 @media(prefers-color-scheme: dark){
     html{
         
         background-color: $dark-mode-bg;
     }
+    #dark{
+        display: none;
+    }
+    #light{
+        display: flex;
+        
+    }
+    header .logo-menu .nav-dark-mode #light{
+        color: $darkmode-text-color;
+    }
+    
     header .logo-menu ._h3 h3, header .logo-menu .nav-dark-mode ul li a, header .logo-menu .nav-dark-mode #dark,.wrap .home .my-name h4, .wrap .home .my-name h1,
     .wrap .projects .heading .h2, .wrap .contact .heading .h2, .wrap .skills .heading .h2, .wrap .other-projects .heading .h2 , .wrap .projects .my-projects .sample-projects .project-details h1, .wrap .projects .my-projects .sample-projects .project-details .tool span, .wrap .other-projects .heading-2 h3,
     .wrap .skills .my-skills .my-skills-border .skills-list h4 , .wrap .contact .my-contact .contact-me .contact-div .form-border form h2 , .wrap .contact .my-contact .contact-me .contact-div .form-border form .textbox label,
