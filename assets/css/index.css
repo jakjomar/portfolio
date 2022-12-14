@@ -9,6 +9,7 @@ html {
   width: 100%;
   background-color: #f0fffd;
   scroll-behavior: smooth;
+  transition: 0.5s;
 }
 
 body {
@@ -47,6 +48,9 @@ header .logo-menu ._h3 h3 {
   font-style: kanit;
   color: #00331a;
 }
+header .logo-menu ._h3 h3:hover {
+  color: #0D4C92;
+}
 header .logo-menu .nav-dark-mode {
   width: auto;
   display: flex;
@@ -70,11 +74,19 @@ header .logo-menu .nav-dark-mode ul li a {
 header .logo-menu .nav-dark-mode ul li a:hover {
   color: #0D4C92;
 }
+header .logo-menu .nav-dark-mode button {
+  border: none;
+  background-color: transparent;
+}
 header .logo-menu .nav-dark-mode #dark {
   font-size: 24px;
   color: #00331a;
   cursor: pointer;
   transition: 0.3s;
+}
+header .logo-menu .nav-dark-mode #dark:hover {
+  transform: rotate(-25deg);
+  color: #0D4C92;
 }
 header .logo-menu .nav-dark-mode #light {
   font-size: 24px;
@@ -82,6 +94,11 @@ header .logo-menu .nav-dark-mode #light {
   cursor: pointer;
   transition: 0.3s;
 }
+header .logo-menu .nav-dark-mode #light:hover {
+  transform: rotate(-25deg);
+  color: #0D4C92;
+}
+
 .project-AOS-animate {
   width: 88%;
   margin: 0;
@@ -244,7 +261,6 @@ header .logo-menu .nav-dark-mode #light {
   height: auto;
   display: flex;
   padding-top: 30px;
-  padding-bottom: 10px;
 }
 .wrap .projects .heading .h2, .wrap .contact .heading .h2, .wrap .skills .heading .h2, .wrap .other-projects .heading .h2 {
   font-weight: bold;

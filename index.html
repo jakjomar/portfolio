@@ -18,7 +18,6 @@
     <!-- if AOS from file is not working redirect from AOS CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <link rel="stylesheet" href="(unkinown)"> -->
 </head>
 <body>
     <header class="navbar" id="navbar">
@@ -35,8 +34,12 @@
                     <li data-aos="fade-down" data-aos-delay="700"><a href="#contact">contact</a></li>
                 </ul>
                 <div data-aos="fade-down" data-aos-delay="800">
-                    <i class="fa-regular fa-moon" id="dark" ></i>
-                    <i class="fa-regular fa-sun " id="light"></i>
+                    <button type="button" id="dark">
+                        <i class="fa-regular fa-moon" id="" ></i>
+                    </button>
+                    <button type="button" id="light">
+                        <i class="fa-regular fa-sun "></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -471,7 +474,7 @@
             <h3>Created by Jomar bodino</h3>
         </footer>
     </div>
-    
+    <script src="assets/script.js"></script>
       <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;

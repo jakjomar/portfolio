@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap');
+
 @import url(https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap);
 // $accent: #0c6;
 $accent: #0D4C92;
@@ -26,6 +26,7 @@ html{
     background-color: #f0fffd;
     // background-color: $dark-mode-bg;
     scroll-behavior: smooth;
+    transition: 0.5s;
     
 }
 body{
@@ -60,6 +61,9 @@ header{
                 font-weight: normal;
                 font-style: kanit;
                 color: $color;
+                &:hover{
+                    color: $accent;
+                }
             }
         }
         .nav-dark-mode{
@@ -87,14 +91,18 @@ header{
                     }
                 }
             }
+            button{
+                border: none;
+                background-color: transparent;
+            }
             #dark{
                 font-size: 24px;
                 color: $color;
                 cursor: pointer;
                 transition: 0.3s;
                 &:hover{
-                    // transform: rotate(-25deg);
-                    // color: $accent;
+                    transform: rotate(-25deg);
+                    color: $accent;
                 }
             }
             #light{
@@ -104,8 +112,8 @@ header{
                 // display: none;
                 transition: 0.3s;
                 &:hover{
-                    // transform: rotate(-25deg);
-                    // color: $accent;
+                    transform: rotate(-25deg);
+                    color: $accent;
                 }
 
             }
@@ -296,7 +304,7 @@ header{
             height: auto;
             display: flex;
             padding-top: 30px;
-            padding-bottom: 10px;
+            // padding-bottom: 10px;
             // border: 1px solid black;
             .h2{
                 font-weight: bold;

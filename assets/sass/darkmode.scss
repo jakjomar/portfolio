@@ -15,6 +15,7 @@ $darkmode-div-bg:  #1f1f1f;
 html{
         
     background-color: $dark-mode-bg;
+    transition: 0.5s;
 }
 #dark{
     display: none;
